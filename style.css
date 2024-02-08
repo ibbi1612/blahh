@@ -1,0 +1,54 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-top: 50px;
+    overflow: hidden; /* Ensures the video doesn't overflow */
+    background-color: #f9ece9; /* Soft pink background */
+}
+
+video {
+    position: fixed; /* Fixed position so it covers the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%; /* Make the video cover the entire width */
+    height: 100%; /* Make the video cover the entire height */
+    z-index: -1; /* Place the video behind other content */
+    object-fit: cover; /* Ensure the video covers the entire element */
+}
+
+#message {
+    font-size: 32px; /* Increased font size */
+    margin-bottom: 20px;
+    font-weight: bold; /* Added to make text bold */
+    color: #000000; /* Black text color */
+}
+
+#proposal {
+    display: none;
+    font-size: 36px; /* Increased font size */
+    color: #ff1493; /* Hot Pink */
+    font-weight: bold; /* Added to make text bold */
+}
+
+#question {
+    display: none;
+    font-size: 28px; /* Increased font size */
+    margin-top: 20px;
+    font-weight: bold; /* Added to make text bold */
+}
+
+button {
+    background-color: #ff6961; /* Coral button background color */
+    color: #ffffff; /* White button text color */
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 22px; /* Increased font size */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff8c7b; /* Lighter coral on hover */
+}
